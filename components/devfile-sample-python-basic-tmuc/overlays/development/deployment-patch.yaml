@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-tmuc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-cysd-tenant/appstudio/devfile-sample-python-basic-tmuc@sha256:119186c930942ca419f66921435ba4048395b78d14deedf0adfc366d09a9e879
+        name: my-python
+        resources: {}
+status: {}
