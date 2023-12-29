@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-python-basic-tmuc
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-cysd-tenant/appstudio/devfile-sample-python-basic-tmuc@sha256:119186c930942ca419f66921435ba4048395b78d14deedf0adfc366d09a9e879
         name: my-python
         ports:
         - containerPort: 8081
